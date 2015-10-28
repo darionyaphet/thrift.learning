@@ -337,7 +337,7 @@ public class TBinaryProtocol extends TProtocol {
 		} else {
 			readAll(i32rd, 0, 4);
 		}
-		
+
 		return ((buf[off] & 0xff) << 24) | ((buf[off + 1] & 0xff) << 16) | ((buf[off + 2] & 0xff) << 8)
 				| ((buf[off + 3] & 0xff));
 	}
@@ -419,7 +419,7 @@ public class TBinaryProtocol extends TProtocol {
 		if (length < 0) {
 			throw new TProtocolException(TProtocolException.NEGATIVE_SIZE, "Negative length: " + length);
 		}
-		
+
 		if (stringLengthLimit_ != NO_LENGTH_LIMIT && length > stringLengthLimit_) {
 			throw new TProtocolException(TProtocolException.SIZE_LIMIT, "Length exceeded max allowed: " + length);
 		}
