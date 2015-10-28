@@ -40,12 +40,12 @@ public abstract class TServer {
 
 	public static abstract class AbstractServerArgs<T extends AbstractServerArgs<T>> {
 		final TServerTransport serverTransport;
-		
+
 		TProcessorFactory processorFactory;
-		
+
 		TTransportFactory inputTransportFactory = new TTransportFactory();
 		TTransportFactory outputTransportFactory = new TTransportFactory();
-		
+
 		TProtocolFactory inputProtocolFactory = new TBinaryProtocol.Factory();
 		TProtocolFactory outputProtocolFactory = new TBinaryProtocol.Factory();
 
