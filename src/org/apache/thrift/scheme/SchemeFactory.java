@@ -20,6 +20,6 @@ package org.apache.thrift.scheme;
 
 public interface SchemeFactory {
 
-  public <S extends IScheme> S getScheme();
+	public <S extends IScheme> S getScheme();
 
 }

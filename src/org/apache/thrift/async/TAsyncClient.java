@@ -22,7 +22,7 @@ import org.apache.thrift.protocol.TProtocolFactory;
 import org.apache.thrift.transport.TNonblockingTransport;
 
 public abstract class TAsyncClient {
-	
+
 	protected final TProtocolFactory ___protocolFactory;
 	protected final TNonblockingTransport ___transport;
 	protected final TAsyncClientManager ___manager;
